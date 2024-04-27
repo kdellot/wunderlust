@@ -192,22 +192,61 @@
 
         </main>
         <aside>
-            Contact Us
-            First Name (Enter first name)
-            Last Name (Enter last name)
-
-            Contact Method (Email, Text, Phone)
-            Email Address (Enter Email)
-            Phone Number (Enter telephone number)
-
-            Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
-            Travel Time (Fall, Winter, Spring, Summer, Flexible)
+            <h2>Contact Us</h2>
+            <form>
+                <label for="firstname">First Name<span>*</span></label>
+                <input id="firstname" placeholder="Enter first name" name="firstname" type="text" required>
+    
+                <label for="lastname">Last Name<span>*</span></label>
+                <input id="lastname" placeholder="Enter last name" name="lastname" type="text" required>
+    
+                <fieldset>
+                  <legend>Contact Method<span>*</span></legend>
+    
+                  <input id="radio-1" type="radio" name="contact" value="email" required>
+                  <label for="radio-1">Email</label>
+    
+                  <input id="radio-2" type="radio" name="contact" value="text">
+                  <label for="radio-2">Text</label>
+    
+                  <input id="radio-3" type="radio" name="contact" value="phone">
+                  <label for="radio-3">Phone</label>
+                </fieldset>
+    
+                <label for="email">Email<span>*</span></label>
+                <input id="email" placeholder="Enter email" name="email" type="text" required>
+    
+                <label for="phone">Phone<span>*</span></label>
+                <input id="phone" placeholder="Enter telephone number" name="phone" type="text" required>
+    
+                <label for="destinations">Destination<span>*</span></label>
+                <select id="destinations" name="destinations">
+                  <option value="barcelona">Barcelona</option>
+                  <option value="granada">Granada</option>
+                  <option value="ibiza">Ibiza</option>
+                  <option value="madrid">Madrid</option>
+                  <option value="majorca">Majorca</option>
+                  <option value="seville">Seville</option>
+                  <option value="tenerife">Tenerife</option>
+                  <option value="valencia">Valencia</option>
+                </select>
+                
+                <label for="travel-time">Travel Time<span>*</span></label>
+                <select id="travel-time" name="travel-time">
+                  <option value="spring">Spring</option>
+                  <option value="summer">Summer</option>
+                  <option value="fall">Fall</option>
+                  <option value="winter">Winter</option>
+                  <option value="flexible">Flexible</option>
+                </select>
+    
+                <input type="submit">
+            </form>
         </aside>
         <footer>
-
-            Copyright 2021 Wunderlust
-            Privacy Statement
-            Terms of Service
+            <p>&copy; 2021 Wunderlust</p>
+            <a href="#">Privacy Statement</a>
+            <a href="#">Terms of Service</a>
         </footer>
     </body>
 </html>
