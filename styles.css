@@ -71,13 +71,7 @@ table {
 
 
 /* blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-} */
+*/
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -238,7 +232,6 @@ h2, h3 {
 
 /* MAIN STYLES */
 article > section, footer {
-    /* margin-top: 1.5rem; */
     padding: 5% 10%;
 }
 
@@ -610,10 +603,6 @@ footer a {
 /* LARGE SCREEN */
 @media screen and (min-width: 980px) {
 
-    /* HEADER */
-    
-
-    /* NAV */
 
     /* INTRO */
     #intro {
